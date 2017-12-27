@@ -1,0 +1,2 @@
+regsvr32.exe ObjectManager.dll && regsvr32.exe SecurityManager.dll && regsvr32.exe StorageServerProxy.dll && regsvr32.exe HelperAPI.dll
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\RegAsm.exe /register DocsVision.Platform.dll /tlb /codebase

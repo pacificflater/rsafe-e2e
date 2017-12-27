@@ -1,0 +1,79 @@
+body {
+  border: 0;
+  margin: 0;
+  padding: 2px;
+  width: 290px;
+  height: 140px;
+  font-size: 16px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  padding: 0 1px;
+  border-spacing: 0 1px;
+}
+
+body, table {
+  color: #333;
+  font-family: arial, sans-serif;
+}
+
+table tr td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  width: calc(100% - 40px);
+  -webkit-user-select: none;
+}
+
+table tr {
+  transition: 100ms ease all;
+  outline: solid 1px transparent;
+  -moz-transition: 100ms ease all;
+  -webkit-transition: 100ms ease all;
+}
+
+table tr:hover {
+  outline: solid 1px #A7A7A7;
+}
+
+.info {
+  padding: 0 5px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.info[state='disabled'] {
+  color: #949494;
+}
+
+.icon {
+  width: 30px;
+  padding: 5px;
+}
+
+.icon[type='state'] {
+  background: url('state.png') no-repeat center center;
+  background-size: 32px;
+}
+
+.icon[type='options'] {
+  background: url('options.png') no-repeat center center;
+  background-size: 32px;
+}
+
+.icon[type='support'] {
+  background: url('support.png') no-repeat center center;
+  background-size: 32px;
+}
+
+.icon[state='disabled'] {
+  background: url('disabled.png') no-repeat center center;
+  background-size: 32px;
+}

@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+body, table {
+  color: #333;
+  font-family: arial, sans-serif;
+}
+
+body {
+  padding: 5px 9px;
+  min-width: 740px;
+}
+
+table {
+  font-size: 12px;
+}
+
+body, table {
+  font-size: 11px;
+}
+
+body>* {
+  width: 100%;
+  max-width: 1600px;
+}
+
+p {
+  margin: 0;
+  line-height: 14px;
+  text-align: justify;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  text-align: center;
+}
+
+table thead {
+  font-weight: bold;
+}
+
+tr {
+  background-color: #FFF;
+  outline: solid 1px rgb(228, 228, 228);
+}
+
+tr td {
+  margin: 0;
+  width: auto;
+  padding: 3px;
+  height: auto;
+  color: #404040;
+  border-width: 0;
+  background-color: #fffdfd;
+  transition: 300ms background-color;
+  -moz-transition: 300ms background-color;
+  -webkit-transition: 300ms background-color;
+}
+
+tr td[type='number'] {
+  width: 30px;
+  text-align: center;
+}
+
+tr td[type='name'], tr td[type='value'] {
+  min-width: 90px;
+  overflow: hidden;
+  text-align: left;
+  line-height: 14px;
+  vertical-align: middle;
+}
+
+tr td[type='check'] {
+  cursor: pointer;
+  text-align: center;
+}
+
+tr td[type='toggle'] {
+  cursor: pointer;
+  background-color: green;
+}
+
+tr td[type='toggle'][state='active'] {
+  background-color: #2E78BB;
+}
+
+tr td[type='toggle'][state='active']:hover {
+  background-color: #D7D7D7;
+}
+
+tr td[type='toggle'][state='inactive'] {
+  background-color: #D7D7D7;
+}
+
+tr td[type='close'] {
+  width: 35px;
+  cursor: pointer;
+  background: url('close-black.png') no-repeat center center;
+}
+
+tr td[type='close']:hover {
+  background: #C75050 url('close-white.png') no-repeat center center;
+}
+
+tr td[type="ajax-item"] {
+  margin: 0;
+}
+
+tr td[type="ajax-item-add"] {
+  width: 45px;
+  height: 34px;
+  cursor: pointer;
+  background: #3a3a3a url(add.png) no-repeat center center;
+}
+
+tr td[type="ajax-item-add"]:hover {
+  background: #000000 url('add.png') no-repeat center center;
+}
+
+tr[state='inactive'] td, tr[state='inactive'] td a {
+  color: #AAA !important;
+}
+
+tr[state='inactive'] td input {
+  opacity: 0.7 !important;
+}
+
+input {
+  margin: 0;
+  padding: 3px;
+  height: 28px;
+  outline: none;
+  border: solid 1px #ddd;
+}
+
+input[placeholder] {
+  width: 100%;
+  border-radius: 0;
+  border: solid 1px #d4d4d4;
+}
+
+input[type='checkbox'] {
+  padding: 0;
+  vertical-align: middle;
+}
+
+.information {
+  padding: 2px;
+  color: #6B6E70;
+  text-align: justify;
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.note {
+  padding: 0;
+  font-size: 90%;
+  margin: 5px 0 0 0;
+  color: #707070 !important;
+}
+
+.b-shadow {
+  padding: 1px 2px;
+  margin: 0 0 1px 0;
+  border: solid 1px #dadada;
+}

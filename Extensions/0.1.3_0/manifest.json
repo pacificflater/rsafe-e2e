@@ -1,0 +1,30 @@
+{
+   "background": {
+      "page": "lib/chrome/background.html"
+   },
+   "browser_action": {
+      "default_icon": "data/icons/enabled/32.png",
+      "default_popup": "data/popup/popup.html",
+      "default_title": "Modify Header Value (HTTP Headers)"
+   },
+   "description": "Add, modify or remove a header for any request on desired domains.",
+   "homepage_url": "http://mybrowseraddon.com/modify-header-value.html",
+   "icons": {
+      "128": "data/icons/enabled/128.png",
+      "16": "data/icons/enabled/16.png",
+      "32": "data/icons/enabled/32.png",
+      "48": "data/icons/enabled/48.png",
+      "64": "data/icons/enabled/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0VwiY1vs3DoFpQW42dpZPkL6fDJuqmjja2cRzoNO0/q8sZHmWixsSlPku+VhlCPDpmxVHk5ZkYM9C19pB7dP9akiSQTRte6Tc3SbVIoziTZ7vehcyg3jCuV/iMkbLI/f/Rehbm5kAJS0/ij72fMQI2eRAgXdxPAhJdZNjsK9mslnbvNzxW+j4jmukDqGf1Em2/vIQ7bhVyinDyer3zmMARTIAfiBzqPag8mEZI8gP3XHhl4bRoqKg1CCbWJr3GvIeB+c6ZFbVkkq2RGtoMEyoeYZNn0RmUZ5E17Nd0b8ijZrOu73z2Df0okTD9vAS5vdqrPCZPatlh3M8qaxNldkVwIDAQAB",
+   "manifest_version": 2,
+   "name": "Modify Header Value (HTTP Headers)",
+   "options_ui": {
+      "chrome_style": true,
+      "page": "data/options/options.html"
+   },
+   "permissions": [ "tabs", "storage", "\u003Call_urls>", "webRequest", "webRequestBlocking" ],
+   "short_name": "modifyheadervalue",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.3"
+}

@@ -1,0 +1,1 @@
+psexec64.exe \\192.168.209.224 -u demo\rsafeuser -p P@ssw0rd -s C:\script\restartRsafeServices.bat

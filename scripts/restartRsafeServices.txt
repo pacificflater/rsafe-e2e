@@ -1,0 +1,2 @@
+net stop apache && net start apache
+schtasks /End /TN Celery.default && schtasks /End /TN CeleryBeat && schtasks /End /TN Celery.subscription && schtasks /Run /TN Celery.default && schtasks /Run /TN CeleryBeat && schtasks /Run /TN Celery.subscription
